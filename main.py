@@ -1,4 +1,5 @@
 
+import os
 import json
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
@@ -14,13 +15,23 @@ optimizer = 'adadelta'
 
 
 def do():
-    train_data_dir = 'Taunt.json'
-    train_data_dir_gt = 'TauntGT.json'
+    train_data_dir = "Dataset"
+    train_data_dir_gt = "Dataset/gt"
+    data = []
+    gt_data = []
 
-    with open(train_data_dir, 'r') as file:
-        data = json.load(file)  # returns JSON object as a dictionary
-    with open(train_data_dir_gt, 'r') as file:
-        gt_data = json.load(file)
+    os.chdir(train_data_dir)
+    for file in os.listdir():
+        if file.endswith(".json"):
+            with open(file, 'r') as f:
+                d = json.load(f)  # returns JSON object as a dictionary
+                data = data + d
+
+    os.chdir(train_data_dir_gt)
+    for file in os.listdir():
+        with open(file, 'r') as f:
+            d = json.load(f)
+            gt_data = gt_data + d
 
     # Divide data in train-val-test
     X_train, x_test, Y_train, y_test = train_test_split(data, gt_data, test_size=0.2)
