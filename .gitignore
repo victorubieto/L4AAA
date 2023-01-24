@@ -1,0 +1,14 @@
+# No images
+*.png
+*.jpg
+
+# No animation files
+*.fbx
+*.glb
+*.json
+
+# Skpi specific folders
+MLStuff/*
+.idea/*
+.ipynb_checkpoints/*
+main*
