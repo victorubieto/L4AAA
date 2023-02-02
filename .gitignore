@@ -12,3 +12,4 @@ MLStuff/*
 .idea/*
 .ipynb_checkpoints/*
 main*
+*.blend1
