@@ -1,5 +1,5 @@
-# L4AAA Open Database
-The Landmarks for Available Avatar Animations (L4AAA) Open Database is a publicly available database designed to assist developers in addressing the issue of limited datasets for 3D animation synthesis. Unlike 2D animation, the creation of 3D animation datasets cannot be achieved through human annotation alone. Accurate manual 3D annotation is a difficult task that requires either a well-equipped laboratory with 3D scans or the construction of a synthetic dataset, both of which come with their own challenges.
+# L4AAA Open Dataset
+The Landmarks for Available Avatar Animations (L4AAA) Open Dataset is a publicly available database designed to assist developers in addressing the issue of limited datasets for 3D animation synthesis. Unlike 2D animation, the creation of 3D animation datasets cannot be achieved through human annotation alone. Accurate manual 3D annotation is a difficult task that requires either a well-equipped laboratory with 3D scans or the construction of a synthetic dataset, both of which come with their own challenges.
 
 The goal of this project is to create a readily accessible dataset that can be continually improved through automation. This dataset operates under the assumption that the 3D avatar's render is realistic enough for a pose and hand recognizer to perceive it as a real person and process it accordingly. By directly linking landmarks with skeleton joint rotations, this dataset aims to make animation synthesis more seamless and efficient for developers.
 
