@@ -24,4 +24,4 @@ I would like to extend my gratitude to the following teams:
 Their tools and resources have been instrumental in the development of this project and I am deeply grateful for their support.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Apache 2.0 License.
